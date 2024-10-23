@@ -57,7 +57,14 @@ namespace SteveModTemplate
         // Called once per frame, useful for updates
         public void Update()
         {
-            
+            if (PhotonNetwork.InRoom)
+            {
+                 if (!room == PhotonNetwork.CurrentRoom)
+                 {
+                      //
+                 }
+                 else if (room == PhotonNetwork.CurrentRoom)
+            }
         }
     }
 
